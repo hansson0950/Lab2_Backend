@@ -1,0 +1,28 @@
+GET http://localhost:3000/members
+
+###
+
+GET http://localhost:3000/members/62222f2138bf76795e305040
+
+###
+
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+    "name": "Pelle",
+    "memberInOrg": "KTH"
+}
+
+###
+
+DELETE http://localhost:3000/members/62222ee938bf76795e305039
+
+###
+
+PATCH http://localhost:3000/members/62222f2138bf76795e305040
+Content-Type: application/json
+
+{
+    "memberInOrg": "LTH"
+}
